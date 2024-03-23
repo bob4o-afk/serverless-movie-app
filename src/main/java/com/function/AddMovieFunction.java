@@ -38,9 +38,9 @@ public class AddMovieFunction {
     }
 
     private void insertMovieIntoDatabase(Movie movie) throws SQLException {
-        String jdbcUrl = "jdbc:sqlserver://movie-serverless.database.windows.net:1433;database=Movies";
-        String username = "CloudSA0a345777";
-        String password = "BobinkataQk69!";
+        String jdbcUrl = "jdbc:sqlserver://{name}.database.windows.net:1433;database={db_name}";
+        String username = "######";
+        String password = "#######";
 
         // SQL statement to insert a new movie
         String sql = "INSERT INTO Movies (Title, ReleaseYear, Genre, Description, Director, Actors) VALUES (?, ?, ?, ?, ?, ?)";
