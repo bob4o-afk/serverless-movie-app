@@ -25,9 +25,9 @@ public class CalculateAverageRatingFunction {
     }
 
     private void updateAverageRatings() throws SQLException {
-        String jdbcUrl = "jdbc:sqlserver://movie-serverless.database.windows.net:1433;database=Movies";
-        String username = "CloudSA0a345777";
-        String password = "BobinkataQk69!";
+        String jdbcUrl = "jdbc:sqlserver://{name}.database.windows.net:1433;database={db_name}";
+        String username = "######";
+        String password = "#######";
 
         String selectSql = "SELECT Title, AVG(Rating) AS AverageRating FROM Ratings GROUP BY Title";
 
