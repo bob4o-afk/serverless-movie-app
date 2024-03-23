@@ -1,18 +1,31 @@
+package com.function;
+
 public class Movie {
     private String title;
-    private int year;
+    private int ReleaseYear;
     private String genre;
     private String description;
     private String director;
     private String actors;
+    private double averageRating;
 
-    public Movie(String title, int year, String genre, String description, String director, String actors) {
+    public Movie(String title, int ReleaseYear, String genre, String description, String director, String actors) {
         this.title = title;
-        this.year = year;
+        this.ReleaseYear = ReleaseYear;
         this.genre = genre;
         this.description = description;
         this.director = director;
         this.actors = actors;
+    }
+
+    public Movie(String title, int ReleaseYear, String genre, String description, String director, String actors, double averageRating) {
+        this.title = title;
+        this.ReleaseYear = ReleaseYear;
+        this.genre = genre;
+        this.description = description;
+        this.director = director;
+        this.actors = actors;
+        this.averageRating = averageRating;
     }
 
     // Getters
@@ -20,8 +33,8 @@ public class Movie {
         return title;
     }
 
-    public int getYear() {
-        return year;
+    public int getReleaseYear() {
+        return ReleaseYear;
     }
 
     public String getGenre() {
@@ -40,13 +53,17 @@ public class Movie {
         return actors;
     }
 
+    public double getAverageRating(){
+        return averageRating;
+    }
+
     // Setters
     public void setTitle(String title) {
         this.title = title;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setReleaseYear(int ReleaseYear) {
+        this.ReleaseYear = ReleaseYear;
     }
 
     public void setGenre(String genre) {
@@ -63,5 +80,9 @@ public class Movie {
 
     public void setActors(String actors) {
         this.actors = actors;
+    }
+
+    public void setAverageRating(double averageRating) {
+        this.averageRating = averageRating;
     }
 }

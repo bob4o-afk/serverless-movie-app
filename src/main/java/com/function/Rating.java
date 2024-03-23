@@ -1,4 +1,6 @@
-public class Review {
+package com.function;
+
+public class Rating {
     private String title;
     private String opinion;
     private int rating;
@@ -6,7 +8,7 @@ public class Review {
     private String author;
 
     // Constructor
-    public Review(String title, String opinion, int rating, String dateTime, String author) {
+    public Rating(String title, String opinion, int rating, String dateTime, String author) {
         this.title = title;
         this.opinion = opinion;
         this.rating = rating;
