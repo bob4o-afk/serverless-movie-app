@@ -72,11 +72,7 @@ This Azure serverless application allows users to manage movie information, rati
 
 ## Contributors:
 
-- [Your Name](https://github.com/your-github-username)
-
-## License:
-
-This project is licensed under the [MIT License](LICENSE).
+- [bob4o-afk](https://github.com/bob4o-afk)
 
 ---
 
